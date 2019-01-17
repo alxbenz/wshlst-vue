@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Tabs from "./components/Tabs.vue";
+import Tabs from "@/components/Tabs.vue";
 
 @Component({
   components: {
@@ -28,13 +28,6 @@ export default class Wshlst extends Vue {}
 </style>
 <style lang="scss">
 #wshlst {
-  font-family: "Roboto", sans-serif;
-  max-width: 1000px;
-  margin: 0 auto;
-
-  h1 {
-    text-align: center;
-  }
 }
 </style>
 
