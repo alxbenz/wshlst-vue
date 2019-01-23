@@ -8,7 +8,7 @@
 <script>
 import TabContent from "./TabContent.vue";
 import TabLabel from "./TabLabel.vue";
-import { mapState } from "vuex";
+import { mapState, mapActions } from "vuex";
 
 export default {
   name: "Tabs",
@@ -18,6 +18,13 @@ export default {
   components: {
     TabContent,
     TabLabel
+  },
+  methods: {
+    ...mapActions(["getItemsAction", "getCategoriesAction"])
+  },
+  beforeMount() {
+    this.getCategoriesAction();
+    this.getItemsAction();
   }
 };
 </script>

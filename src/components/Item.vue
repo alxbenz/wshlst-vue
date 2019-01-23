@@ -87,7 +87,6 @@ export default {
       this.toggleItemVisibilityAction(itemId);
     },
     toggleItemReservation(itemId) {
-      this.toggleItemReservationAction(itemId);
       this.setItemReservationNameAction({
         itemId,
         reservedBy: this.reservedBy

@@ -74,7 +74,7 @@ export default {
   },
   methods: {
     ...mapActions(["addItemAction"]),
-    addItem: function() {
+    addItem() {
       const object = {
         itemId: hlpr_createId(),
         itemLink: this.link,
